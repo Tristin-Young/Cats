@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <% if (isLoggedIn) { %>
+            <li><a href="/post">Post</a></li>
+            <li><a href="/myposts">My Posts</a></li>
+            <li><a href="/settings">Settings</a></li>
+            <li><a href="/logout">Logout</a></li>
+          <% } else { %>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/register">Register</a></li>
+          <% } %>
+        </ul>
+      </nav>
+    </header>
+
+    <h1>Welcome to the Home Page</h1>
+  </body>
+</html>
